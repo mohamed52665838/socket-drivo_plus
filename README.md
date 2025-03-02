@@ -50,10 +50,12 @@ python -m pip install virtualenv
 ```
 * create virtual environnement with the selected interpreter
 ```bash
-python -m virtualenv --python=path/to/installed/interpreter .venv .
+python -m virtualenv --python=path/to/installed/interpreter .venv
 ```
 command above will create you virtual environnement with the selected interpreter
 * activate your environnement
+
+  
 for linux
 ```bash
 source .venv/bin/activate
