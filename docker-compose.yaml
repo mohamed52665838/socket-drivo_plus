@@ -1,0 +1,31 @@
+
+services:
+  web:
+    image: drivo_plus:0.1.1
+    container_name: drivo_plus-web
+    ports:
+      - ${WEB_PORT}:80
+      
+
+
+  ai_service:
+    build: .    
+    image: ai_service:latest
+    ports:
+      - ${WS_PORT}:80
+    depends_on:
+      - web
+    container_name: ai_service
+    develop:
+      watch:
+        - action: restart
+          path: .
+          target: app/ 
+    environment:
+      - APP_PORT=80
+      - SLEEP_TIME_ALERT=4
+      - NF_TIME_ALERT=15
+      - CONF_VAR=0.25
+
+
+
