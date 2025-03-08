@@ -92,7 +92,7 @@ async def server_data(websocket):
                         if delta_sleep_nf.seconds > NO_FACE_THREASHOLD:
                             await websocket.send(NO_FACE_ALERT)
                             last_time_sleep.pop(NO_FACE_KEY) 
-                            requestBody = NotificationBody(category='montal_alert', user_id=handshake_data.get('user_id'),token=handshake_data.get('token'))
+                            requestBody = NotificationBody(category='mental_alert', user_id=handshake_data.get('user_id'),token=handshake_data.get('token'))
                             await send_notification(requestBody, last_time_sleep)
                             print(f'No face alert sent')
                     
