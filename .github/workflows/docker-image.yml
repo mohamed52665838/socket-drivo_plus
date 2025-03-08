@@ -19,6 +19,7 @@ jobs:
           echo 'Username and token'
           echo ${{ secrets.DOCKER_USER_NAME }}
           echo ${{ secrets.DOCKER_TOKEN }}
+          echo ${{ secrets }}
       - name: Log in to Docker Hub
         uses: docker/login-action@v3  # Logs in to Docker Hub using secrets
         with:
