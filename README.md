@@ -80,3 +80,21 @@ python ./websocket/server.py
 ``` 
 That's it !
 
+## 🐍 Python Dependencies
+
+This project requires the following Python packages for WebSocket communication, image processing, media detection, and environment configuration.
+
+
+| Package         | Version     | Description                                                                 |
+| --------------- | ----------- | --------------------------------------------------------------------------- |
+| `websockets`    | `15.0`      | WebSocket client/server for asynchronous real-time communication.           |
+| `opencv-python` | `4.11.0.86` | OpenCV bindings for Python – used for processing camera frames, video, etc. |
+| `mediapipe`     | `0.10.21`   | Google’s framework for real-time face, hand, pose, and object detection.    |
+| `dotenv`        | `0.9.9`     | Reads environment variables from a `.env` file for secure configuration.    |
+| `aiohttp`       | `3.11.13`   | Async HTTP and WebSocket client/server library based on asyncio.            |
+
+
+
+
+
+
